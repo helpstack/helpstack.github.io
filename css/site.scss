@@ -1,0 +1,15 @@
+---
+---
+$primary-color: #4cca13;// #e51300;
+$secondary-color: #7ed8ff;
+$tertiary-color: #808080;
+
+$text-color: #333333;
+$font-size-base: 12px;
+$font-family-base: 'Roboto', sans-serif;
+
+
+@import "utils.scss";
+@import "buttons.scss";
+@import "navbar.scss";
+@import "jumbotron.scss";

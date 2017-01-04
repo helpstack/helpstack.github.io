@@ -1,0 +1,232 @@
+﻿// Utility & Helpers.
+
+// If using webfonts this will reduce the thickness
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  > .panel {
+  	height: 100%;
+  }
+}
+.no-gutter {
+	margin-left: 0px;
+	margin-right: 0px;
+	[class*="col-"] {
+		padding-left: 1px;
+		padding-right: 1px;
+		margin-bottom: 2px;
+	}
+}
+
+.no-underline{
+	text-decoration: none !important;
+}
+
+.text-color {
+	color: $text-color;
+}
+
+
+.text-muted-inverse {
+	color: rgba(255,255,255,.5);
+}
+.text-white {
+    color: white;
+}
+
+.text-normal {
+	font-size: $font-size-base;
+	font-family: $font-family-base;
+}
+
+.text-xxlarge {
+	font-size: $font-size-base * 3;
+}
+
+.bg-white { background-color: white }
+
+.centered {
+	margin:0 auto;
+	display: block;
+}
+
+.no-border {
+	border: none;
+}
+
+.collapse {
+	display: none;
+}
+
+// Floats an element to the left.
+.pull-left {
+	float: left;
+}
+
+// Floats an element to the right.
+.pull-right {
+	float: right;
+}
+
+.de-decorate {
+	text-decoration:none;
+}
+
+.force-one-line {
+	white-space:nowrap;
+}
+
+.relative {
+    position: relative;
+}
+.transition {
+    transition: all .4s ease-in-out;
+}
+
+// The (in)famous clearfix.
+.clearfix {
+	zoom: 1;
+	&:after,
+	&:before {
+		content:'';
+		display:table;
+	}
+	&:after {
+		clear:both;
+	}
+}
+.clear {
+  width: 1%;
+  display: table-cell;
+}
+.no-wrap {
+	white-space: nowrap;
+}
+// Resets the :before pseudo of the default ul's and ol's.
+.reset-list-before-pseudo {
+	position:static;
+	content:'';
+	display:none;
+}
+
+[ng-click],
+[onclick] {
+	cursor: pointer;
+}
+
+.glyphicon-sm {
+	font-size: 80%;
+}
+.glyphicon-md {
+	font-size: 100%;
+
+}
+.glyphicon-lg {
+	font-size: 120%;
+}
+
+.glyphicon-xlg {
+	font-size: 150%;
+}
+
+// Offsets & Insets.
+//
+// Offset uses marging, inset uses padding.
+//
+.offset { margin: 35px; }
+.offset-xxsm { margin: 6px; }
+.offset-xsm { margin: 12px; }
+.offset-sm { margin: 24px; }
+.offset-md { margin: 42px; }
+.offset-lg { margin: 50px; }
+.offset-xlg { margin: 70px; }
+.offset-xxlg { margin: 90px; }
+.no-offset { margin: 0 !important; }
+
+.offset-top { margin-top: 35px; }
+.offset-top-xxsm { margin-top: 6px; }
+.offset-top-xsm { margin-top: 12px; }
+.offset-top-sm { margin-top: 24px; }
+.offset-top-md { margin-top: 42px; }
+.offset-top-lg { margin-top: 50px; }
+.offset-top-xlg { margin-top: 70px; }
+.no-offset-top { margin-top: 0 !important; }
+.neg-offset-top-xxsm { margin-top: -6px; }
+.neg-offset-top-xsm { margin-top: -12px; }
+
+.offset-left { margin-left: 35px; }
+.offset-left-xxsm { margin-left: 6px; }
+.offset-left-xsm { margin-left: 12px; }
+.offset-left-sm { margin-left: 24px; }
+.offset-left-md { margin-left: 42px; }
+.offset-left-lg { margin-left: 50px; }
+.offset-left-xlg { margin-left: 70px; }
+.no-offset-left { margin-left: 0 !important; }
+.neg-offset-left-xsm { margin-left: -6px; }
+
+.offset-bottom { margin-bottom: 35px; }
+.offset-bottom-xxsm { margin-bottom: 6px; }
+.offset-bottom-xsm { margin-bottom: 12px; }
+.offset-bottom-sm { margin-bottom: 24px; }
+.offset-bottom-md { margin-bottom: 42px; }
+.offset-bottom-lg { margin-bottom: 50px; }
+.offset-bottom-xlg { margin-bottom: 70px; }
+.no-offset-bottom { margin-bottom: 0 !important; }
+
+.offset-right { margin-right: 35px; }
+.offset-right-xxsm { margin-right: 6px; }
+.offset-right-xsm { margin-right: 12px; }
+.offset-right-sm { margin-right: 24px; }
+.offset-right-md { margin-right: 42px; }
+.offset-right-lg { margin-right: 50px; }
+.offset-right-xlg { margin-right: 70px; }
+.no-offset-right { margin-right: 0 !important; }
+
+
+.inset { padding: 28px; }
+.inset-xxsm { padding: 6px; }
+.inset-xsm { padding: 12px; }
+.inset-sm { padding: 24px; }
+.inset-lg { padding: 50px; }
+.inset-xlg { padding: 70px; }
+.no-inset { padding: 0 !important; }
+
+.inset-top { padding-top: 28px; }
+.inset-top-xxsm { padding-top: 6px; }
+.inset-top-xsm { padding-top: 12px; }
+.inset-top-sm { padding-top: 24px; }
+.inset-top-lg { padding-top: 50px; }
+.inset-top-xlg { padding-top: 70px; }
+.inset-top-xxlg { padding-top: 90px; }
+.no-inset-top { padding-top: 0 !important; }
+
+.inset-left { padding-left: 28px; }
+.inset-left-xxsm { padding-left: 6px; }
+.inset-left-xsm { padding-left: 12px; }
+.inset-left-sm { padding-left: 24px; }
+.inset-left-lg { padding-left: 50px; }
+.inset-left-xlg { padding-left: 70px; }
+.no-inset-left { padding-left: 0 !important; }
+
+.inset-bottom { padding-bottom: 28px; }
+.inset-bottom-xxsm { padding-bottom: 6px; }
+.inset-bottom-xsm { padding-bottom: 12px; }
+.inset-bottom-sm { padding-bottom: 24px; }
+.inset-bottom-lg { padding-bottom: 50px; }
+.inset-bottom-xlg { padding-bottom: 70px; }
+.no-inset-bottom { padding-bottom: 0 !important; }
+
+.inset-right { padding-right: 28px; }
+.inset-right-xxsm { padding-right: 6px; }
+.inset-right-xsm { padding-right: 12px; }
+.inset-right-sm { padding-right: 24px; }
+.inset-right-lg { padding-right: 50px; }
+.inset-right-xlg { padding-right: 70px; }
+.no-inset-right { padding-right: 0 !important; }

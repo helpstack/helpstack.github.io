@@ -1,0 +1,102 @@
+﻿/* BASE */
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow:none;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background: $primary-color;
+    color: white;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: lighten($primary-color, 5%);
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: darken($primary-color, 5%);
+    box-shadow: none;
+}
+
+/* raised */
+.btn-primary.raised {
+	box-shadow: 0 3px 0 0 darken($primary-color, 10%);
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+	background: $primary-color;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+/* outline */
+.btn.outline {
+	background: none;
+	padding: 12px 22px;
+}
+.btn-primary.outline {
+	border: 2px solid $primary-color;
+	color: $primary-color;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    background: none;
+	color: lighten($primary-color, 10%);
+	border-color: lighten($primary-color, 10%);
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+	border-color: $primary-color;
+	color: $primary-color;
+	box-shadow: none;
+}
+
+/* DEFAULT BUTTON */
+.btn-default {
+    background: $tertiary-color;
+    color: white;
+}
+ 
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    background: lighten($tertiary-color, 5%);
+}
+ 
+.btn-default:active, .btn-default.active {
+    background: darken($tertiary-color, 5%);
+    box-shadow: none;
+}
+
+// outline
+.btn-default.outline {
+	border: 2px solid $tertiary-color;
+	color: $tertiary-color;
+}
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+    background: none;
+	color: lighten($tertiary-color, 10%);
+	border-color: lighten($tertiary-color, 10%);
+}
+.btn-default.outline:active, .btn-default.outline.active {
+	border-color: $tertiary-color;
+	color: $tertiary-color;
+	box-shadow: none;
+}
+
+// raised
+.btn-default.raised {
+	box-shadow: 0 3px 0 0 darken($tertiary-color, 10%);
+}
+.btn-default.raised:active, .btn-default.raised.active {
+	background: $tertiary-color;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}

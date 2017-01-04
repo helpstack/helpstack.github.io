@@ -1,0 +1,25 @@
+﻿.navbar {
+    background-color: white;
+    .navbar-brand {
+        padding: 0;
+    }
+    .navbar-nav {
+        li {
+            a.btn {
+                padding:3px 10px;
+                margin:10px 0;
+                font-weight: 300;
+            }
+            a:not(.btn) {
+                color: black;
+                font-size: 14px;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+            a:hover:not(.btn) {
+                color: #333333;
+                background:none;
+            }
+        }
+    }
+}

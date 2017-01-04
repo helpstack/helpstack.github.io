@@ -1,0 +1,15 @@
+.jumbotron {
+    padding-top: 100px;
+    padding-bottom: 0;
+    color: black;
+    background: $secondary-color; /* Old browsers */
+    background: radial-gradient(ellipse at bottom, rgba(lighten($secondary-color, 20%), .80) 0%, rgba($secondary-color, .80) 100%), url('../images/callcenter.jpg'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    h1 {
+        color: white;
+    }
+    .container {
+        .eye-catcher {
+            margin-top: 50px;
+        }
+    }
+}
