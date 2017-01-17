@@ -16,16 +16,47 @@
 	</div>
 	<div class="questions">
 		<h1 class="page-header no-offset-top">Dashboard</h1>
-		<ul class="nav">
-			<li>
-				<div class="list-item">
-					<i class="fa fa-square-o"></i>
-					<a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a>
-				</div>
-			</li>
-			<li><a href="#"><i class="fa fa-question-circle"></i> Welke maatregelen kan ik nemen o....</a></li>
-			<li><a href="#"><i class="fa fa-question-circle"></i> Wat is een verhuurdersverklaring?</a></li>
-			<li><a href="#"><i class="fa fa-question-circle"></i> De opleverklachten van mijn nieuwe wo...</a></li>
-		</ul>
+		<form class="form-inline">
+			<div class="form-group">
+				<input type="text" class="form-control" id="query" name="query" placeholder="Find your questions here">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputEmail2">Sort by</label>
+				<select id="sort" name="sort" class="form-control">
+					<option>Position</option>
+					<option>Question</option>
+					<option>Date changed</option>
+					<option>Date created</option>
+				</select>
+			</div>
+		</form>
+		<table class="table table-hover">
+			<tbody>
+				<tr>
+					<td class="checkbox"><i class="fa fa-square-o"></i></td>
+					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
+					<td class="author">Jasper</td>
+					<td class="actions"></td>
+				</tr>
+				<tr>
+					<td class="checkbox"><i class="fa fa-square-o"></i></td>
+					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
+					<td class="author">Jasper</td>
+					<td class="actions"></td>
+				</tr>
+				<tr>
+					<td class="checkbox"><i class="fa fa-square-o"></i></td>
+					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
+					<td class="author">Jasper</td>
+					<td class="actions"></td>
+				</tr>
+				<tr>
+					<td class="checkbox"><i class="fa fa-square-o"></i></td>
+					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
+					<td class="author">Jasper</td>
+					<td class="actions"></td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </div>
