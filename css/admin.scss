@@ -1,0 +1,35 @@
+---
+---
+@import "variables.scss";
+
+@import "utils.scss";
+@import "buttons.scss";
+@import "jumbotron.scss";
+@import "strike.scss";
+@import "insets.scss";
+@import "offsets.scss";
+
+@import "admin_dashboard.scss";
+@import "admin_sidebar.scss";
+
+body {
+	font-family: $font-family-base;
+}
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-left: 60px;
+  }
+}

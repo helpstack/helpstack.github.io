@@ -5,12 +5,22 @@
     font-weight: 400;
     letter-spacing: 1px;
     text-shadow:none;
+    line-height: 2;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
  
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
+}
+
+.btn-google {
+	background: #4D90FE;
+    color: white;
+}
+.btn-google:hover {
+	background: darken(#4D90FE, 5);
+    color: white;
 }
 
 /* PRIMARY BUTTON */

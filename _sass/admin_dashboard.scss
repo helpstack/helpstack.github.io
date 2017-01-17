@@ -1,0 +1,19 @@
+.dashboard {
+	
+	.filters {
+		position: fixed;
+		width: 256px;
+		top: 0;
+		bottom: 0;
+		padding: 25px 24px 0;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background-color: #f6f6f6;
+		border-right: 1px solid $gray-light;
+	}
+	.questions {
+		width: calc(100% - 256px);
+		padding: 25px 20px;
+		margin-left: 256px;
+	}
+}

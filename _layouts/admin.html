@@ -1,12 +1,67 @@
-{% include header-admin.html %}    
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<div class="container">
-	<div class="row">
-		<label>Name:</label>
-		<input type="text" ng-model="yourName" placeholder="Enter a name here">
-		<hr>
-		<h1>Hello <span ng-bind="yourName"></span>!</h1>
+	<title>{{ page.title }}</title>
+
+	<meta name="author" content="MyCreativity 2017">
+	<meta name="copyright" content="Copyright My Creativity - Creative Internet Development">
+	<meta name="robots" content="follow,index">
+
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="index" href="http://www.helpstack.net/">
+
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/admin.css">
+
+</head>
+<body ng-app="app">
+	<!-- ng-show="isAuthenticated" -->
+
+	<div class="container-fluid main" ui-view>
+		<!-- MAIN VIEW -->
 	</div>
-</div>
 
-{% include footer-admin.html %}  
+	<aside class="sidebar">			
+		<a href="/">
+			<img src="/images/logo-square.png" alt="" />
+		</a>
+
+		<ul class="nav nav-sidebar no-inset-top">
+			<li class="active"><a href="#"><i class="fa fa-home fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-file-text-o fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-user-circle-o fa-lg"></i></a></li>
+		</ul>
+		<ul class="nav nav-sidebar">
+			<li><a href="#"><i class="fa fa-cog fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-info-circle fa-lg"></i></a></li>
+		</ul>
+	</aside>
+
+
+	<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="/bower_components/auth0.js/build/auth0.js"></script>
+	<script type="text/javascript" src="/bower_components/angular-auth0/dist/angular-auth0.js"></script>
+	<script type="text/javascript" src="/bower_components/angular-jwt/dist/angular-jwt.js"></script>
+
+	<script type="text/javascript" src="/js/admin/auth.variables.js"></script>
+	<script type="text/javascript" src="/js/admin/app.js"></script>
+	<script type="text/javascript" src="/js/admin/app.run.js"></script>
+	<script type="text/javascript" src="/js/admin/components/dashboard/dashboard.controller.js"></script>
+	<script type="text/javascript" src="/js/admin/components/login/login.controller.js"></script>
+	<script type="text/javascript" src="/js/admin/components/auth/auth.service.js"></script>
+
+</body>
+</html>

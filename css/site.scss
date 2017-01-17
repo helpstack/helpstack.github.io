@@ -1,22 +1,14 @@
 ---
 ---
-$primary-color: #4cca13;// #e51300;
-$secondary-color: #7ed8ff;
-$tertiary-color: #808080;
-
-$gray-light: #f0f0f0;
-$gray-default: #999999;
-$gray-dark: #333333;
-
-$text-color: #333333;
-$font-size-base: 12px;
-$font-family-base: 'Open Sans', sans-serif;
-
+@import "variables.scss";
 
 @import "utils.scss";
 @import "buttons.scss";
 @import "navbar.scss";
 @import "jumbotron.scss";
+@import "strike.scss";
+@import "insets.scss";
+@import "offsets.scss";
 
 body {
 	font-family: $font-family-base;
