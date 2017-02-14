@@ -85,7 +85,13 @@
 .de-decorate {
 	text-decoration:none;
 }
-
+.has-feedback-left .form-control-feedback {
+  left: 0;
+}
+.has-feedback-left input.form-control {
+  padding-left: 34px; 
+  padding-right: 12px; 
+}
 .force-one-line {
 	white-space:nowrap;
 }

@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('app', ['auth0.auth0', 'angular-jwt', 'ui.router'])
+    .module('app', ['auth0.auth0', 'angular-jwt', 'ui.router', 'ui'])
     .config(config);
 
   config.$inject = ['$stateProvider', '$qProvider', 'angularAuth0Provider', '$urlRouterProvider'];

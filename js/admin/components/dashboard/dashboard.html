@@ -1,4 +1,4 @@
-<div class="dashboard">
+<div class="dashboard" ng:controller="DashboardController">
 	<div class="filters">
 		<h5>Questions</h5>
 		<ul class="nav">
@@ -18,7 +18,11 @@
 		<h1 class="page-header no-offset-top">Dashboard</h1>
 		<form class="form-inline">
 			<div class="form-group">
+				
+			</div>
+			<div class="form-group has-feedback has-feedback-left">
 				<input type="text" class="form-control" id="query" name="query" placeholder="Find your questions here">
+				<i class="form-control-feedback fa fa-search"></i>
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail2">Sort by</label>
@@ -31,30 +35,13 @@
 			</div>
 		</form>
 		<table class="table table-hover">
-			<tbody>
-				<tr>
-					<td class="checkbox"><i class="fa fa-square-o"></i></td>
-					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
-					<td class="author">Jasper</td>
-					<td class="actions"></td>
-				</tr>
-				<tr>
-					<td class="checkbox"><i class="fa fa-square-o"></i></td>
-					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
-					<td class="author">Jasper</td>
-					<td class="actions"></td>
-				</tr>
-				<tr>
-					<td class="checkbox"><i class="fa fa-square-o"></i></td>
-					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
-					<td class="author">Jasper</td>
-					<td class="actions"></td>
-				</tr>
-				<tr>
-					<td class="checkbox"><i class="fa fa-square-o"></i></td>
-					<td class="question"><a href="#"><i class="fa question-circle"></i> Hoe kan ik mijn huur betalen?</a></td>
-					<td class="author">Jasper</td>
-					<td class="actions"></td>
+			<tbody ui:sortable ng:model="questions">
+				<tr ng:repeat="question in questions">
+					<td class="reorder"><a class="handle" href=""><i class="fa fa-bars"></i></a></td>
+					<td class="select"><i class="fa fa-square-o"></i></td>
+					<td class="question"><a href="#"><i class="fa question-circle"></i> <span ng-bind="question.name"></span></a></td>
+					<td class="author"><span ng-bind="question.author"></span></td>
+					<td class="actions"><a href="#"><i class="fa fa-pencil"></i></a> <a href="#"><i class="fa fa-trash-o"></i></a></td>
 				</tr>
 			</tbody>
 		</table>

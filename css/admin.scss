@@ -15,6 +15,10 @@
 body {
 	font-family: $font-family-base;
 }
+a, a:hover {
+  color: $tertiary-color;
+  text-decoration: none;
+}
 /*
  * Base structure
  */

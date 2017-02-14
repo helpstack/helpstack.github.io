@@ -15,5 +15,44 @@
 		width: calc(100% - 256px);
 		padding: 25px 20px;
 		margin-left: 256px;
+		.table {
+			table-layout: fixed;			
+			.reorder {
+				width: 8px;
+				padding: 8px 0;
+				a {
+					visibility: hidden;
+					color: $gray-default;
+					cursor: row-resize;
+				}
+			}			
+			.select {
+				width: 20px;
+				color: $gray-default;
+			}			
+			.question {
+				white-space: nowrap;
+				overflow: hidden;
+			}		
+			.author {
+				width: 100px;
+				white-space: nowrap;
+				overflow: hidden;
+			}		
+			.actions {
+				width: 50px;
+				a {
+					visibility: hidden;
+					color: $gray-dark;
+				}
+			}
+			tr:hover {
+				.actions, .reorder {
+					a {
+						visibility: visible;						
+					}
+				}
+			}
+		}
 	}
 }
